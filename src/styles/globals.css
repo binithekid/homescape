@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.MobileHero {
+  height: calc(100vh - 3rem);
+}

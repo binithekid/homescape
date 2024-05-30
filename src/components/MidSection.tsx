@@ -4,9 +4,9 @@ import Worker from "../../public/worker.jpg";
 
 const MidSection = () => {
   return (
-    <div className="flex px-14 py-[7rem] h-[40rem] flex-row w-full bg-zinc-200">
-      <div className="flex w-1/2 justify-between flex-col">
-        <h1 className="w-4/5 font-medium text-4xl">
+    <div className="flex px-8 md:px-14 py-20 md:gap-0 gap-10 md:py-[7rem] md:h-[40rem] flex-col md:flex-row w-full bg-zinc-200">
+      <div className="flex md:w-1/2 justify-between flex-col">
+        <h1 className="md:w-4/5 font-medium text-4xl">
           Our team of skilled artisans and designers collaborates closely to
           bring your vision to life.
         </h1>
@@ -25,7 +25,7 @@ const MidSection = () => {
           </div>
         </div>
       </div>
-      <div className="flex w-1/2">
+      <div className="flex md:w-1/2">
         <Image src={Worker} alt="worker" className="object-cover rounded" />
       </div>
     </div>

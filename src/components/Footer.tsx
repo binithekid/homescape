@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="py-14 border-t md:mt-0 mt-20 flex flex-row justify-between w-full border-gray-500">
+      <div className="py-14 border-t md:mt-0 mt-20 flex flex-col md:gap-0 gap-4 md:flex-row justify-between w-full border-gray-500">
         <div className="flex flex-row gap-2">
           <p className="text-gray-400 text-sm">
             © 2024 Homescape | All Rights Reserved

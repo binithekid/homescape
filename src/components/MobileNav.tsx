@@ -33,7 +33,7 @@ const MobileNavBar = () => {
   return (
     <>
       <div className="md:hidden flex shadow z-50 w-full bg-white flex-col">
-        <div className="pt-2 px-8">
+        <div className="pt-2 px-4">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

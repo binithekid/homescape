@@ -10,7 +10,8 @@ const OverlaySection = () => {
           lives.
           <span className="text-gray-400">
             {" "}
-            We craft bespoke pieces that resonate with our clients' visions.
+            We craft bespoke pieces that resonate with our clients&apos;
+            visions.
           </span>
         </h1>
         <button className="flex w-max flex-row border transition-all hover:opacity-70 bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 rounded-full items-center gap-2 border-gray-200 px-4 py-2">

@@ -4,9 +4,9 @@ import Sofa from "../../public/sofa.jpg";
 
 const ProductSection = () => {
   return (
-    <div className="w-full pt-[7rem] bg-white px-14 flex flex-col">
-      <div className="flex mb-4 justify-between gap-20 flex-row">
-        <h1 className="w-1/2 font-medium text-4xl">
+    <div className="w-full pt-[7rem] bg-white px-4 md:px-14 flex flex-col">
+      <div className="flex mb-4 justify-between gap-20 flex-col md:flex-row">
+        <h1 className="md:w-1/2 font-medium text-2xl md:text-4xl">
           Using high-quality materials, we transform raw concepts into stunning,
           custom-made furniture that perfectly complements your home.
         </h1>

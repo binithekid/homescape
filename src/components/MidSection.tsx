@@ -4,13 +4,13 @@ import Worker from "../../public/worker.jpg";
 
 const MidSection = () => {
   return (
-    <div className="flex px-4 md:px-14 py-20 md:gap-0 gap-10 md:py-[7rem] md:h-[40rem] flex-col md:flex-row w-full bg-zinc-200">
+    <div className="flex px-4 md:px-14 py-20 md:gap-0 gap-4 md:py-[7rem] md:h-[40rem] flex-col md:flex-row w-full bg-zinc-200">
       <div className="flex md:w-1/2 justify-between flex-col">
-        <h1 className="md:w-4/5 font-medium text-4xl">
+        <h1 className="md:w-4/5 font-medium text-2xl md:text-4xl">
           Our team of skilled artisans and designers collaborates closely to
           bring your vision to life.
         </h1>
-        <div className="flex flex-row gap-4">
+        <div className="md:flex hidden flex-row gap-4">
           <div className="flex flex-col border-r pr-6 border-gray-400">
             <p className="text-sm font-light text-gray-500">01</p>
             <p>Planning</p>

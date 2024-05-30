@@ -18,8 +18,8 @@ export default function Home() {
     <main className="scroll-smooth overflow-hidden">
       <MobileNavBar />
       <Navbar />
-      <div className="w-full px-4 md:px-16 MobileHero md:h-screen justify-between md:bg-fixed bg-[url('/bgmain.jpg')] bg-cover flex flex-col">
-        <div className="h-20" />
+      <div className="w-full px-4 md:px-16 h-screen justify-between md:bg-fixed bg-[url('/bgmain.jpg')] bg-cover flex flex-col">
+        <div className="h-20 " />
         <div className="flex flex-col gap-4 md:gap-6 w-full md:w-2/3">
           <motion.h1
             initial={{ opacity: 0, y: 10 }}

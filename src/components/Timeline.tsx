@@ -1,14 +1,15 @@
+import React, { useEffect } from "react";
 import { useState } from "react";
-import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
-import manworking from "../../public/manworking.jpg"; // Make sure to update the path
 import Support from "../../public/support.jpg"; // Make sure to update the path
-import Chair2 from "../../public/chair2.jpg"; // Make sure to update the path
 import QualityCheck from "../../public/qualitycheck.jpg"; // Make sure to update the path
 import Installation from "../../public/istallation.jpg"; // Make sure to update the path
+import manworking from "../../public/manworking.jpg"; // Make sure to update the path
+import Image from "next/image";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Timeline = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+
   const faqItems = [
     {
       question: "01 Design Development",
@@ -35,29 +36,28 @@ const Timeline = () => {
       image: Support,
     },
   ];
-
   return (
     <div className="w-full py-[7rem] md:py-40 px-4 md:px-14">
-      <div className="flex gap-20 flex-col lg:flex-row">
+      <div className="flex flex-col lg:flex-row gap-20">
         <div className="flex lg:w-1/2 justify-between flex-col">
           <div>
             <h1 className="font-medium text-2xl md:text-3xl">
-              Four simple steps to bring your dream space to life{" "}
+              Four simple steps to bring your dream space to life
             </h1>
           </div>
-          <div className="lg:mt-0 mt-20">
+          <div className="lg:mt-0 mt-10">
             {faqItems.map((item, index) => (
               <div
-                key={index}
                 className={`mb-4 border-b pb-1 ${
                   activeIndex === index ? "border-black" : "border-gray-200"
                 }`}
+                key={index}
               >
                 <h2
+                  onClick={() => setActiveIndex(index)}
                   className={`cursor-pointer pb-2 font-light text-xl md:text-2xl ${
                     activeIndex === index ? "text-black" : "text-gray-400"
                   }`}
-                  onClick={() => setActiveIndex(index)}
                 >
                   {item.question}
                 </h2>
@@ -74,23 +74,28 @@ const Timeline = () => {
                 </motion.div>
               </div>
             ))}
-            <button className="rounded-full mt-4 text-sm px-4 w-max py-2 text-white font-medium transition-all hover:opacity-80 bg-gray-800 ">
+
+            <button className="rounded-full mt-4 text-sm px-4 w-max text-white bg-gray-800 font-medium py-2 transition-all hover:opacity-80">
+              {" "}
               Learn More
             </button>
           </div>
         </div>
-        <div className="lg:w-1/2">
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, ease: "easeInOut" }}
-          >
-            <Image
-              src={faqItems[activeIndex].image}
-              alt="chair"
-              className="rounded"
-            />
-          </motion.div>
+        <div className="md:w-1/2">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeIndex}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+            >
+              <Image
+                className="rounded"
+                src={faqItems[activeIndex].image}
+                alt="Timeline Image"
+              />
+            </motion.div>
+          </AnimatePresence>
         </div>
       </div>
     </div>

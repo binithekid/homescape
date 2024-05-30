@@ -3,11 +3,11 @@ import Chair2 from "../../public/slider1.jpg";
 import Chair1 from "../../public/slider2.jpg";
 import Sofa from "../../public/slider3.jpg";
 import Table from "../../public/slider4.jpg";
-import { HiOutlineArrowSmallRight } from "react-icons/hi2";
-import { HiOutlineArrowSmallLeft } from "react-icons/hi2";
-import { BsDot } from "react-icons/bs";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { HiOutlineArrowSmallLeft } from "react-icons/hi2";
+import { HiOutlineArrowSmallRight } from "react-icons/hi2";
+import { BsDot } from "react-icons/bs";
 
 const images = [Chair2, Sofa, Chair1, Table];
 
@@ -23,10 +23,9 @@ const Slider = () => {
   };
 
   return (
-    <div className="pt-20 px-4 md:px-14 bg-gray-200">
-      <h1 className="md:w-2/3 font-medium text-2xl md:text-4xl"></h1>
-      <h1 className="text-2xl font-medium md:text-4xl md:w-[65%]">
-        We strive to leave a positive impact on both our environment &
+    <div className="bg-gray-200 py-20 px-4 md:px-14">
+      <h1 className="text-3xl font-medium md:teext-4xl md:w-[65%]">
+        We strive to leave a positive impact on both our environament &
         communities we serve
       </h1>
       <div className="relative flex flex-col items-center py-10 md:py-20">
@@ -38,31 +37,27 @@ const Slider = () => {
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
           >
             {images.map((image, index) => (
-              <motion.div
-                key={image.src}
-                className="min-w-[30rem] h-[20rem] p-2"
-              >
+              <motion.div className="p-2 min-w-[30rem] h-[20rem]" key={index}>
                 <img
-                  src={image.src}
-                  alt={`Slide ${index}`}
                   className="w-full h-full object-cover rounded"
+                  src={image.src}
                 />
               </motion.div>
             ))}
           </motion.div>
         </div>
-        <div className="flex flex-row items-center justify-between w-full mt-4">
+        <div className="flex flex-row w-full justify-between mt-6">
           <button
+            className="bg-white p-3 rounded-full shadow transition-all hover:opacity-70"
             onClick={prevSlide}
-            className="bg-white p-3 rounded-full shadow-sm"
           >
             <HiOutlineArrowSmallLeft className="text-gray-800" />
           </button>
-          <div className="flex flex-row gap-1">
+          <div className="flex flex-row ga-1">
             {images.map((_, index) => (
               <BsDot
                 key={index}
-                className={`text-2xl cursor-pointer ${
+                className={`cursor-pointer text-2xl ${
                   index === currentIndex ? "text-gray-800" : "text-gray-400"
                 }`}
                 onClick={() => setCurrentIndex(index)}
@@ -70,8 +65,8 @@ const Slider = () => {
             ))}
           </div>
           <button
+            className="bg-white p-3 rounded-full shadow transition-all hover:opacity-70"
             onClick={nextSlide}
-            className="bg-white p-3 rounded-full shadow-sm"
           >
             <HiOutlineArrowSmallRight className="text-gray-800" />
           </button>

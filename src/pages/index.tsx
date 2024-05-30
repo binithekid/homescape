@@ -8,10 +8,10 @@ import { motion } from "framer-motion";
 import MidSection from "@/components/MidSection";
 import ProductSection from "@/components/ProductSection";
 import OverlaySection from "@/components/OverlaySection";
+import MobileNavBar from "@/components/MobileNav";
 import Timeline from "@/components/Timeline";
 import Slider from "@/components/Slider";
 import Footer from "@/components/Footer";
-import MobileNavBar from "@/components/MobileNav";
 
 export default function Home() {
   return (

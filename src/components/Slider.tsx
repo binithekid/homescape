@@ -23,12 +23,13 @@ const Slider = () => {
   };
 
   return (
-    <div className="pt-20 px-14 bg-gray-200">
-      <h1 className="text-4xl w-[65%]">
+    <div className="pt-20 px-4 md:px-14 bg-gray-200">
+      <h1 className="md:w-2/3 font-medium text-2xl md:text-4xl"></h1>
+      <h1 className="text-2xl font-medium md:text-4xl md:w-[65%]">
         We strive to leave a positive impact on both our environment &
         communities we serve
       </h1>
-      <div className="relative flex flex-col items-center py-20">
+      <div className="relative flex flex-col items-center py-10 md:py-20">
         <div className="overflow-hidden w-[90rem] h-[20rem]">
           <motion.div
             className="flex"

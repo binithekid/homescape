@@ -10,18 +10,18 @@ const MidSection = () => {
           Our team of skilled artisans and designers collaborates closely to
           bring your vision to life.
         </h1>
-        <div className="md:flex hidden flex-row gap-4">
+        <div className="flex flex-row py-10 gap-4">
           <div className="flex flex-col border-r pr-6 border-gray-400">
-            <p className="text-sm font-light text-gray-500">01</p>
-            <p>Planning</p>
+            <p className="md:text-sm text-xs font-light text-gray-500">01</p>
+            <p className="md:text-base text-sm">Planning</p>
           </div>
           <div className="flex flex-col border-r pr-6 border-gray-400">
-            <p className="text-sm font-light text-gray-500">02</p>
-            <p>Design</p>
+            <p className="md:text-sm text-xs font-light text-gray-500">02</p>
+            <p className="md:text-base text-sm">Design</p>
           </div>
           <div className="flex flex-col  ">
-            <p className="text-sm font-light text-gray-500">03</p>
-            <p>Excecution</p>
+            <p className="md:text-sm text-xs font-light text-gray-500">03</p>
+            <p className="md:text-base text-sm">Excecution</p>
           </div>
         </div>
       </div>

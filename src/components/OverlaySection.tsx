@@ -2,10 +2,10 @@ import React from "react";
 
 const OverlaySection = () => {
   return (
-    <div className="relative flex items-center  w-full h-[40rem] bg-[url('/table.jpg')] bg-cover">
+    <div className="relative flex items-center w-full md:py-0 py-[6rem] md:h-[40rem] bg-[url('/table.jpg')] bg-cover">
       <div className="absolute inset-0 bg-black opacity-60"></div>
-      <div className="relative px-14 w-[85%] flex flex-col gap-4">
-        <h1 className="text-white font-medium tracking-tight text-5xl">
+      <div className="relative px-4 md:px-14 md:w-[85%] flex flex-col gap-4">
+        <h1 className="text-white font-medium tracking-tight text-3xl md:text-5xl">
           We believe in the power of design to transform spaces and enrich
           lives.
           <span className="text-gray-400">

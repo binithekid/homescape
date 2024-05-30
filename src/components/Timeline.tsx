@@ -37,15 +37,15 @@ const Timeline = () => {
   ];
 
   return (
-    <div className="w-full pt-40 pb-40 px-14">
-      <div className="flex gap-20 flex-row">
-        <div className="flex w-1/2 justify-between flex-col">
+    <div className="w-full py-[7rem] md:py-40 px-4 md:px-14">
+      <div className="flex gap-20 flex-col lg:flex-row">
+        <div className="flex lg:w-1/2 justify-between flex-col">
           <div>
-            <h1 className="font-medium text-3xl">
+            <h1 className="font-medium text-2xl md:text-3xl">
               Four simple steps to bring your dream space to life{" "}
             </h1>
           </div>
-          <div>
+          <div className="lg:mt-0 mt-20">
             {faqItems.map((item, index) => (
               <div
                 key={index}
@@ -54,7 +54,7 @@ const Timeline = () => {
                 }`}
               >
                 <h2
-                  className={`cursor-pointer pb-2 font-light text-2xl ${
+                  className={`cursor-pointer pb-2 font-light text-xl md:text-2xl ${
                     activeIndex === index ? "text-black" : "text-gray-400"
                   }`}
                   onClick={() => setActiveIndex(index)}
@@ -79,7 +79,7 @@ const Timeline = () => {
             </button>
           </div>
         </div>
-        <div className="w-1/2">
+        <div className="lg:w-1/2">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

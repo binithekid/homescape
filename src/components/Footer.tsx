@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -35,10 +36,18 @@ const Footer = () => {
         <div className=" flex gap-20 pr-2 flex-row">
           <div className="flex flex-col gap-3">
             <p className="text-white text-sm">Homescape</p>
-            <p className="text-gray-400 text-sm">Home</p>
-            <p className="text-gray-400 text-sm">About</p>
-            <p className="text-gray-400 text-sm">Work</p>
-            <p className="text-gray-400 text-sm">Contact</p>
+            <Link href="/">
+              <p className="text-gray-400 text-sm">Home</p>
+            </Link>
+            <Link href="about">
+              <p className="text-gray-400 text-sm">About</p>
+            </Link>
+            <Link href="work">
+              <p className="text-gray-400 text-sm">Work</p>
+            </Link>
+            <Link href="contact">
+              <p className="text-gray-400 text-sm">Contact</p>
+            </Link>
           </div>
           <div className="flex flex-col gap-3">
             <p className="text-white text-sm">Contact us</p>

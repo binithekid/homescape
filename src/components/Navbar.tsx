@@ -25,7 +25,7 @@ const Navbar = () => {
       className={classNames(
         "fixed md:block hidden top-0 left-0 w-full z-50 duration-300 transition-all",
         scrollPosition > 20
-          ? "bg-gray-900 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20"
+          ? "bg-gray-900 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30"
           : "bg-transparent",
         isHomePage ? "text-white" : "text-gray-900"
       )}
@@ -48,7 +48,7 @@ const Navbar = () => {
           <p>Contact</p>
         </div>
         <button
-          className={`flex flex-row border transition-all shadow-xl hover:opacity-70 bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 rounded-full items-center gap-2 px-3 py-1 ${
+          className={`flex flex-row border shadow-xl hover:opacity-70 bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 rounded-full items-center gap-2 px-3 py-1 ${
             isHomePage ? "border-gray-200" : "border-gray-400"
           }`}
         >

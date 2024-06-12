@@ -10,10 +10,10 @@ const archivo = Archivo({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <Layout>
-      <main className={archivo.className}>
+    <main className={archivo.className}>
+      <Layout>
         <Component {...pageProps} />
-      </main>
-    </Layout>
+      </Layout>
+    </main>
   );
 }

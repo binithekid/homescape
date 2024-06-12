@@ -32,20 +32,24 @@ const Navbar = () => {
     >
       <div className="flex px-16 py-8 justify-between h-14 items-center">
         <Link href="/">
-          <div className="flex flex-row items-center gap-2">
+          <div className="flex flex-row hover:opacity-50 items-center gap-2">
             <div className="h-5  w-5 rounded-full bg-yellow-300" />
-            <p className="text-2xl tracking-tight">Homescape</p>
+            <p className="text-2xl tracking-tight font-medium">Homescape</p>
           </div>
         </Link>
-        <div className="flex tracking-tight flex-row gap-5">
+        <div className="flex flex-row gap-5">
           <Link href="/">
-            <p className="lg:block hidden hover:opacity-80">Home</p>
+            <p className="hover:opacity-50">Home</p>
           </Link>
           <Link href="/about">
-            <p>About</p>
+            <p className="hover:opacity-50">About</p>
           </Link>
-          <p>Work</p>
-          <p>Contact</p>
+          <Link href="/work">
+            <p className="hover:opacity-50">Work</p>
+          </Link>
+          <Link href="/contact">
+            <p className="hover:opacity-50">Contact</p>
+          </Link>
         </div>
         <button
           className={`flex flex-row border shadow-xl hover:opacity-70 bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 rounded-full items-center gap-2 px-3 py-1 ${
@@ -53,7 +57,7 @@ const Navbar = () => {
           }`}
         >
           <div className="h-4  mt-[0.4px] w-4 rounded-full bg-yellow-300" />
-          <p className="tracking-tight">Book a call</p>
+          <p className="">Book a call</p>
         </button>
       </div>
     </motion.nav>

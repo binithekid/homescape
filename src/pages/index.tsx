@@ -7,13 +7,13 @@ import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
-    <main className="scroll-smooth overflow-hidden">
+    <div className="scroll-smooth overflow-hidden">
       <Hero />
       <MidSection />
+      <Timeline />
       <ProductSection />
       <OverlaySection />
-      <Timeline />
       <Slider />
-    </main>
+    </div>
   );
 }

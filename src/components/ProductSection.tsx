@@ -4,7 +4,7 @@ import Sofa from "../../public/sofa.jpg";
 
 const ProductSection = () => {
   return (
-    <div className="w-full pt-20 md:pt-[7rem] bg-white px-4 md:px-14 flex flex-col">
+    <div className="w-full pt-20 md:pt-[7rem] bg-stone-100 px-4 md:px-14 flex flex-col">
       <div className="md:flex hidden mb-4 justify-between gap-20 flex-col md:flex-row">
         <h1 className="md:w-1/2 font-medium text-2xl md:text-4xl">
           Using high-quality materials, we transform raw concepts into stunning,

@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import Link from "next/link";
 import React, { useEffect, useRef } from "react";
 import Team from "../../public/team.webp";
 import Image from "next/image";

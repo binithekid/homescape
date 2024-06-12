@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 
-const contact = () => {
+const Contact = () => {
   const [topic, setTopic] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -136,4 +136,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default Contact;

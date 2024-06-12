@@ -114,8 +114,8 @@ const about = () => {
 
         <div className="flex flex-col gap-5 w-full md:w-1/2">
           <p className="text-gray-800">
-            We don't just offer a workplace, but an opportunity to be part of
-            something bigger. With us, you get the chance to grow both
+            We don&apos;t just offer a workplace, but an opportunity to be part
+            of something bigger. With us, you get the chance to grow both
             professionally and personally while contributing to shaping the
             energy landscape of the future. We believe in investing in our
             people and create an environment where ideas flow and achievements

@@ -37,16 +37,16 @@ const Footer = () => {
           <div className="flex flex-col gap-3">
             <p className="text-white text-sm">Homescape</p>
             <Link href="/">
-              <p className="text-gray-400 text-sm">Home</p>
+              <p className="text-gray-400 text-sm hover:opacity-70">Home</p>
             </Link>
             <Link href="about">
-              <p className="text-gray-400 text-sm">About</p>
+              <p className="text-gray-400 text-sm hover:opacity-70">About</p>
             </Link>
             <Link href="work">
-              <p className="text-gray-400 text-sm">Work</p>
+              <p className="text-gray-400 text-sm hover:opacity-70">Work</p>
             </Link>
             <Link href="contact">
-              <p className="text-gray-400 text-sm">Contact</p>
+              <p className="text-gray-400 text-sm hover:opacity-70">Contact</p>
             </Link>
           </div>
           <div className="flex flex-col gap-3">

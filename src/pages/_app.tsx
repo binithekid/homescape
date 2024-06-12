@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { Archivo } from "next/font/google";
+import Layout from "@/components/Layout";
 
 const archivo = Archivo({
   subsets: ["latin"],
@@ -9,8 +10,10 @@ const archivo = Archivo({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={archivo.className}>
-      <Component {...pageProps} />
-    </main>
+    <Layout>
+      <main className={archivo.className}>
+        <Component {...pageProps} />
+      </main>
+    </Layout>
   );
 }

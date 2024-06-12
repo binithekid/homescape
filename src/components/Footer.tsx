@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col pt-20 md:pt-[7rem] px-4 md:px-14 w-full bg-stone-800">
+    <div className="flex flex-col pt-10 md:pt-[7rem] px-4 md:px-14 w-full bg-stone-800">
       <div className="flex justify-between flex-col md:flex-row">
         <div className="md:w-1/2 flex flex-col gap-3">
           <h1 className="md:text-4xl text-2xl text-white ">
@@ -29,7 +29,7 @@ const Footer = () => {
 
       <div className="mt-20 border-t hidden md:flex flex-row justify-between w-full border-gray-500 py-20">
         <div className="flex flex-row gap-2">
-          <div className="h-5 w-5 mt-[0.3rem] rounded-full bg-yellow-300" />
+          <div className="h-5 w-5 mt-[0.4rem] rounded-full bg-yellow-300" />
           <p className="text-2xl text-white">Homescape</p>
         </div>
         <div className=" flex gap-20 pr-2 flex-row">
@@ -37,8 +37,7 @@ const Footer = () => {
             <p className="text-white text-sm">Homescape</p>
             <p className="text-gray-400 text-sm">Home</p>
             <p className="text-gray-400 text-sm">About</p>
-            <p className="text-gray-400 text-sm">Products</p>
-            <p className="text-gray-400 text-sm">Catalogue</p>
+            <p className="text-gray-400 text-sm">Work</p>
             <p className="text-gray-400 text-sm">Contact</p>
           </div>
           <div className="flex flex-col gap-3">
@@ -53,7 +52,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="py-14 border-t md:mt-0 mt-20 flex flex-col md:gap-0 gap-4 md:flex-row justify-between w-full border-gray-500">
+      <div className="md:py-14 py-6 border-t md:mt-0 mt-20 flex flex-col md:gap-0 gap-4 md:flex-row justify-between w-full border-gray-500">
         <div className="flex flex-row gap-2">
           <p className="text-gray-400 text-sm">
             © 2024 Homescape | All Rights Reserved

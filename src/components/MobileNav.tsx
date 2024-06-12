@@ -44,7 +44,7 @@ const MobileNavBar = () => {
             <Link href="/">
               <div className="flex -mt-3 flex-row items-center gap-2">
                 <div className="md:h-5 md:w-5 w-4 h-4 rounded-full bg-yellow-300" />
-                <p className="md:text-2xl text-xl">Homescape</p>
+                <p className="md:text-2xl tracking-tight text-xl">Homescape</p>
               </div>
             </Link>
             <div ref={ref}>

@@ -108,7 +108,7 @@ const FAQ = () => {
                 <div className="flex flex-row items-center w-full justify-between">
                   <p
                     onClick={() => toggleAnswer(index)}
-                    className="flex flex-row gap-2 text-xl items-center cursor-pointer text-gray-700"
+                    className="flex flex-row gap-2 text-lg md:text-xl items-center cursor-pointer text-gray-700"
                   >
                     {item.question}
                   </p>

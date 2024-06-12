@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import Team from "../../public/team.webp";
 import Image from "next/image";
 
-const work = () => {
+const Work = () => {
   const scrollDuration = 1000;
 
   const handleButtonClick = () => {
@@ -108,4 +108,4 @@ const work = () => {
   );
 };
 
-export default work;
+export default Work;

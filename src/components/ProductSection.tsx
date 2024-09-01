@@ -71,7 +71,7 @@ const ProductSection = () => {
             <h1 className="md:text-5xl text-3xl w-1/2">01</h1>
             <div className="flex md:w-1/2 gap-1 md:gap-3 flex-col">
               <h1 className="md:text-2xl text-xl tracking-tight font-medium">
-                Focus on "Big 5" levers
+                Focus on &apos;Big 5&apos; levers
               </h1>
               <p className="font-light md:text-base text-sm text-gray-500">
                 Our analysis unpacks how changes to the 5 major digital

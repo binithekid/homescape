@@ -28,10 +28,10 @@ const Hero = () => {
           transition={{ delay: 0.3, duration: 0.7, ease: "easeInOut" }}
           className="md:w-3/4 text-white md:text-base text-sm font-light"
         >
-          Insight Edge Analytics is your embedded C-suite partner We're fluent
-          in both marketing and finance, bridging the gap that others can't. Our
-          expertise transforms marketing strategies into tangible revenue growth
-          and EBITDA impact.
+          Insight Edge Analytics is your embedded C-suite partner We&apos;re
+          fluent in both marketing and finance, bridging the gap that others
+          can&apos;t. Our expertise transforms marketing strategies into
+          tangible revenue growth and EBITDA impact.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 5 }}

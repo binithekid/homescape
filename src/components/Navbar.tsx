@@ -3,6 +3,8 @@ import { useScrollPosition } from "../../hooks/useScrollPosition";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Logo from "../../public/insightlogo.png";
+import Image from "next/image";
 
 const Navbar = () => {
   const scrollPosition: any = useScrollPosition();
@@ -33,11 +35,10 @@ const Navbar = () => {
       <div className="flex px-16 py-8 justify-between h-14 items-center">
         <Link href="/">
           <div className="flex flex-row hover:opacity-50 items-center gap-2">
-            <div className="h-5  w-5 rounded-full bg-yellow-300" />
-            <p className="text-2xl tracking-tight font-medium">Homescape</p>
+            <Image alt="icon4" src={Logo} className="w-[14rem] mx-4 h-auto" />
           </div>
         </Link>
-        <div className="flex flex-row gap-5">
+        {/* <div className="flex flex-row gap-5">
           <Link href="/">
             <p className="hover:opacity-50">Home</p>
           </Link>
@@ -50,7 +51,7 @@ const Navbar = () => {
           <Link href="/contact">
             <p className="hover:opacity-50">Contact</p>
           </Link>
-        </div>
+        </div> */}
         <button
           className={`flex flex-row border shadow-xl hover:opacity-70 bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 rounded-full items-center gap-2 px-3 py-1 ${
             isHomePage ? "border-gray-200" : "border-gray-400"

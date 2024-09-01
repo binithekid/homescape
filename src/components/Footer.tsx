@@ -7,14 +7,14 @@ import { FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="flex flex-col pt-10 md:pt-[7rem] px-4 md:px-14 w-full bg-stone-800">
-      <div className="flex justify-between flex-col md:flex-row">
+      <div className="flex justify-between flex-col md:flex-row pb-20">
         <div className="md:w-1/2 flex flex-col gap-3">
           <h1 className="md:text-4xl text-2xl text-white tracking-tight">
-            Join Our Design Insider List
+            Join Our Insider List
           </h1>
           <p className="text-gray-200 md:text-base text-sm font-thin">
-            Join our community and receive the latest in interior design
-            inspiration, tips, and trends straight to your inbox.
+            Join our community and receive the latest news, inspiration, tips,
+            and trends straight to your inbox.
           </p>
         </div>
         <div className="flex gap-5 mt-6 w-2/3 md:w-1/3 flex-col">
@@ -28,43 +28,10 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="mt-20 border-t hidden md:flex flex-row justify-between w-full border-gray-500 py-20">
-        <div className="flex flex-row gap-2">
-          <div className="h-5 w-5 mt-[0.3rem] rounded-full bg-yellow-300" />
-          <p className="text-2xl text-white">Homescape</p>
-        </div>
-        <div className=" flex gap-20 pr-2 flex-row">
-          <div className="flex flex-col gap-3">
-            <p className="text-white text-sm">Homescape</p>
-            <Link href="/">
-              <p className="text-gray-400 text-sm hover:opacity-70">Home</p>
-            </Link>
-            <Link href="about">
-              <p className="text-gray-400 text-sm hover:opacity-70">About</p>
-            </Link>
-            <Link href="work">
-              <p className="text-gray-400 text-sm hover:opacity-70">Work</p>
-            </Link>
-            <Link href="contact">
-              <p className="text-gray-400 text-sm hover:opacity-70">Contact</p>
-            </Link>
-          </div>
-          <div className="flex flex-col gap-3">
-            <p className="text-white text-sm">Contact us</p>
-            <p className="text-gray-400 text-sm">Homescape</p>
-            <p className="text-gray-400 text-sm">
-              23 Titchfield Road, London SW8 8UY
-            </p>
-            <p className="text-gray-400 text-sm">0208 12405326</p>
-            <p className="text-gray-400 text-sm">info@homescape.com</p>
-          </div>
-        </div>
-      </div>
-
       <div className="md:py-14 py-6 border-t md:mt-0 mt-20 flex flex-col md:gap-0 gap-4 md:flex-row justify-between w-full border-gray-500">
         <div className="flex flex-row gap-2">
           <p className="text-gray-400 text-sm">
-            © 2024 Homescape | All Rights Reserved
+            © 2024 InsightEdge Analytics | All Rights Reserved
           </p>
         </div>
         <div className="flex flex-row gap-3">

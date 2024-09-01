@@ -8,33 +8,36 @@ const FAQ = () => {
 
   const [faqItems, setFaqItems] = useState([
     {
-      question: "What services do you offer?",
+      question:
+        "What types of private equity firms do you typically work with?",
       answer:
-        "Discover our exceptional web design and development services at One Cloud Media. We specialise in creating custom-tailored websites, meticulously crafted to address the unique needs of our clients. Our expertise extends to the development of intricate web applications and software solutions, delivering robust functionality and seamless user experiences. What sets us apart is our unwavering commitment to detail and our dedication to delivering flawless design and performance, ensuring that each project exceeds expectations and stands out in the digital landscape.",
+        "We collaborate with a diverse range of private equity firms. Many of our clients have limited in-house marketing expertise, and we become their go-to partner for marketing diligence and value creation initiatives. We also work alongside firms with established marketing Centers of Excellence, providing fresh insights and complementary perspectives to augment their strategies.",
       isAnswerVisible: false,
     },
     {
-      question: "How about if I am not happy with the product?",
+      question: "How do you measure and track results?",
       answer:
-        "Cultivate extraordinary user experiences and intuitive interfaces with One Cloud Media's UX and UI design services. We specialise in crafting user-centric designs that seamlessly blend aesthetics with functionality. Our team meticulously tailors each interface to align with your brand identity and user expectations, ensuring a cohesive and engaging digital experience. With an emphasis on usability and accessibility, we elevate your digital presence to new heights, setting your brand apart in an ever-evolving digital landscape.",
+        "We prioritize establishing robust marketing analytics infrastructure to accurately measure outcomes. Our team coaches client personnel to facilitate knowledge transfer and build sustainable capabilities. We also develop executive dashboards that clearly demonstrate the financial impact of implemented initiatives, ensuring transparency and accountability throughout the engagement.",
       isAnswerVisible: false,
     },
     {
-      question: "Do you offer installation?",
+      question:
+        "What differentiates InsightEdge from traditional management consulting firms?",
       answer:
-        "Transform your brand's narrative with One Cloud Media's comprehensive content creation services. From captivating videos that resonate with your audience to cohesive branding strategies that elevate your identity, we craft compelling content tailored to your unique vision. Our expertise extends beyond visuals to encompass content marketing materials such as newsletters, email campaigns, and informative articles. With a focus on storytelling and engagement, we empower your brand to connect authentically with your audience across diverse digital channels, driving meaningful interactions and lasting impressions.",
+        "InsightEdge combines the intellectual rigor of top-tier management consulting with the practical expertise of a world-class marketing agency. As seasoned practitioners and operators, we deliver strategies that are not only ambitious but also realistic, achievable, and battle-tested. This unique blend ensures our clients receive actionable insights that drive real-world results.",
       isAnswerVisible: false,
     },
     {
-      question: "Is delivery included in the price?",
+      question:
+        "How do you tailor your approacg to different portfolio companies?",
       answer:
-        "Elevate your digital capabilities with One Cloud Media's full-stack development expertise. From front-end interfaces to back-end infrastructure, our team delivers comprehensive solutions tailored to your specific needs. With proficiency in a wide range of programming languages and frameworks, we craft scalable and efficient applications that meet the demands of today's dynamic digital landscape. Whether it's creating robust web applications, designing intricate databases, or implementing secure APIs, we ensure every aspect of your project is meticulously developed to achieve optimal performance and functionality.",
+        "Our process begins with a comprehensive outside-in analysis to identify opportunities and quick wins. This initial assessment shapes the project scope, which we continuously refine in partnership with client leadership. Our flexible approach ensures that each engagement delivers tangible impact, tailored to the unique needs of each portfolio company.",
       isAnswerVisible: false,
     },
     {
-      question: "How often do you update your catalogue?",
+      question: "How long is a typical engagement?",
       answer:
-        "Accelerate your vision to market with One Cloud Media's MVP app development services. We specialise in rapidly prototyping and launching Minimum Viable Products (MVPs) that showcase your core features and functionality. Our agile development approach allows for swift iteration and refinement, enabling you to gather valuable feedback from users and stakeholders early in the development process. With a focus on delivering essential features efficiently, we help you validate your concept, minimise risk, and lay a solid foundation for future growth and expansion.",
+        "We avoid a one-size-fits-all approach, instead tailoring our engagements to meet your specific business needs. While durations vary, due diligence projects typically span less than a month, value creation initiatives often run for about 3 months, and fractional growth lead roles can range from a few months to a year or more, depending on your requirements.",
       isAnswerVisible: false,
     },
   ]);
@@ -67,11 +70,11 @@ const FAQ = () => {
 
   return (
     <div className="w-full gap-8 bg-stone-100 flex flex-col md:flex-row py-20 px-4 md:px-20">
-      <div className="md:w-1/2 flex justify-center gap-1 flex-col">
+      <div className="md:w-[40%] flex justify-center gap-1 flex-col">
         <p className="font-light md:pr-10 text-sm text-gray-700">
           Frequently Asked Questions
         </p>
-        <h1 className="text-gray-800 font-medium tracking-tight text-2xl md:text-4xl">
+        <h1 className="text-gray-800 font-medium tracking-tight text-2xl">
           Do you have any questions?
         </h1>
 
@@ -88,7 +91,7 @@ const FAQ = () => {
           />
           <button
             type="submit"
-            className="text-white text-sm hover:opacity-70 bg-black rounded-full px-3 py-2 w-max"
+            className="text-white text-sm hover:opacity-70 bg-black rounded px-3 py-2 w-max"
           >
             {!status ? (
               <p>Submit</p>
@@ -100,7 +103,7 @@ const FAQ = () => {
           </button>
         </form>
       </div>
-      <div className="w-full md:w-1/2">
+      <div className="w-full md:w-[60%]">
         <div className="flex-1 md:ml-4 flex flex-col relative overflow-hidden">
           <div className="flex font-uncut  flex-col mt-9 px-0 flex-wrap">
             {faqItems.map((item, index) => (
@@ -141,7 +144,7 @@ const FAQ = () => {
             ))}
             <p className="text-sm font-light text-gray-500 mt-4 mb-4">
               Other questions or requests? Send us an email to:
-              info@homescape.com
+              info@insightedgeanalytics.com
             </p>
           </div>
         </div>

@@ -4,8 +4,8 @@ import Sofa from "../../public/sofa.jpg";
 
 const ProductSection = () => {
   return (
-    <div className="w-full pt-20 md:pt-[7rem] bg-stone-100 px-4 md:px-14 flex flex-col">
-      <div className="md:flex hidden mb-4 justify-between gap-20 flex-col md:flex-row">
+    <div className="w-full pt-20 md:pt-[7rem] bg-white px-4 md:px-14 flex flex-col">
+      {/* <div className="md:flex hidden mb-4 justify-between gap-20 flex-col md:flex-row">
         <h1 className="md:w-1/2 font-medium text-2xl md:text-4xl">
           Using high-quality materials, we transform raw concepts into stunning,
           custom-made furniture that perfectly complements your home.
@@ -54,28 +54,28 @@ const ProductSection = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="flex flex-col w-full md:py-10">
+      </div> */}
+      <div className="flex flex-col w-full">
         <div className="flex gap-3 md:flex-row flex-col justify-between">
           <h1 className="md:w-2/3 font-medium text-2xl md:text-4xl">
-            Crafting Dreams, One Detail at a Time
+            Our Approach
           </h1>
-          <button className="rounded-full text-sm md:text-base w-max tracking-wide px-4 md:px-5 py-2 md:py-3 text-white md:font-medium transition-all hover:opacity-80 bg-gray-800 ">
-            Learn More
-          </button>
+          <p className="md:text-base text-sm text-gray-500">
+            By aligning our expertise with your vision, we craft tailored
+            solutions that catalyse growth and ensure the realisation of
+            strategic objectives
+          </p>
         </div>
         <div className="flex flex-col py-20 w-full">
           <div className="border-t py-12 md:py-16 border-gray-300 gap-5 flex flex-col md:flex-row justify-between">
             <h1 className="md:text-5xl text-3xl w-1/2">01</h1>
             <div className="flex md:w-1/2 gap-1 md:gap-3 flex-col">
               <h1 className="md:text-2xl text-xl tracking-tight font-medium">
-                Inspiration Gathering
+                Focus on "Big 5" levers
               </h1>
               <p className="font-light md:text-base text-sm text-gray-500">
-                In this initial phase, we delve into your unique style,
-                preferences, and functional requirements. Through in-depth
-                consultations and mood board exploration, we gather inspiration
-                to shape the vision for your space.
+                Our analysis unpacks how changes to the 5 major digital
+                marketing levers flow through to revenue
               </p>
             </div>
           </div>
@@ -83,13 +83,12 @@ const ProductSection = () => {
             <h1 className="md:text-5xl text-3xl w-1/2">02</h1>
             <div className="flex md:w-1/2 gap-1 md:gap-3 flex-col">
               <h1 className="md:text-2xl text-xl tracking-tight font-medium">
-                Conceptualization & Design Development
+                Define the timeline
               </h1>
               <p className="font-light md:text-base text-sm text-gray-500">
-                With a clear understanding of your needs, our team translates
-                inspiration into tangible concepts. Through sketching, 3D
-                modeling, and material selection, we refine ideas to create
-                cohesive designs tailored to your aesthetic and lifestyle.
+                Depending on the nature of the engagement, projects can range
+                from a few weeks for due diligence up to 3 months or more for
+                value creation or fractional growth support
               </p>
             </div>
           </div>
@@ -97,15 +96,12 @@ const ProductSection = () => {
             <h1 className="md:text-5xl text-3xl w-1/2">03</h1>
             <div className="flex md:w-1/2 gap-1 md:gap-3 flex-col">
               <h1 className="md:text-2xl text-xl tracking-tight font-medium">
-                Refinement & Implementation
+                Crystallise the plan and assess the financial impact
               </h1>
               <p className="font-light md:text-base text-sm text-gray-500">
-                In the final stage, we collaborate closely with you to fine-tune
-                designs and ensure every detail exceeds expectations. From
-                fabric swatches to furniture prototypes, we work diligently to
-                refine the vision. Once approved, we oversee the implementation
-                phase, bringing your dream space to life with precision and
-                care.
+                We leverage our extensive partner network to build best-in-class
+                marketing motions and provide executive-level dashboards and
+                models to quantify and monitor the financial impact
               </p>
             </div>
           </div>

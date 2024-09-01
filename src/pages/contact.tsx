@@ -22,13 +22,13 @@ const Contact = () => {
           className="md:w-1/2 w-full justify-between flex flex-col gap-5 md:gap-10"
         >
           <div>
-            <h1 className="text-gray-800 font-medium md:w-1/2 tracking-tight text-4xl md:text-5xl">
+            <h1 className="text-gray-800 font-medium md:w-1/2 tracking-tight text-3xl">
               Contact Us
             </h1>
             <div className="md:w-3/4">
               <p className="font-light text-sm mt-2 text-gray-700">
-                Our goal is to help companies build relationships with their
-                customers online through great design and technical.
+                We would love to hear from you so please fill out the contact
+                form for any enquires you may have
               </p>
               <div className="flex flex-col gap-3 mt-4">
                 <a
@@ -38,7 +38,7 @@ const Contact = () => {
                   <span>
                     <IoIosMail className="text-xl" />{" "}
                   </span>
-                  info@homescape.com
+                  info@insightedgeanalytics.com
                 </a>
 
                 <p className="font-light flex flex-row gap-3 items-center cursor-pointer transition-all hover:opacity-70 text-gray-700 ">

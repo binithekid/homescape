@@ -1,23 +1,26 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { IoIosStar } from "react-icons/io";
-import icons1 from "../../public/icons1.png";
-import icons2 from "../../public/icons2.png";
-import icons3 from "../../public/icons3.png";
+import icons4 from "../../public/blackrock.png";
+import icons5 from "../../public/prequin.png";
+import icons6 from "../../public/HSBC.png";
+import icons7 from "../../public/barings.svg";
+import icons8 from "../../public/triat.svg";
 import Image from "next/image";
+import Marquee from "react-fast-marquee";
 
 const Hero = () => {
   return (
-    <div className="w-full px-4 md:px-16 h-screen justify-between md:bg-fixed bg-[url('/bgmain.jpg')] bg-cover flex flex-col">
+    <div className="w-full relative h-screen justify-between md:bg-fixed bg-[url('/bgmain.jpg')] bg-cover flex flex-col">
+      <div className="absolute inset-0 bg-black opacity-60"></div>
       <div className="h-20 " />
-      <div className="flex flex-col gap-4 md:gap-6 w-full md:w-2/3">
+      <div className="flex px-4 md:px-16 relative flex-col gap-4 md:gap-6 w-full md:w-[90%]">
         <motion.h1
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0, duration: 0.7, ease: "easeInOut" }}
-          className="text-white font-medium tracking-tight text-5xl md:text-7xl"
+          className="text-white opacity-100 font-medium tracking-tight text-5xl md:text-7xl"
         >
-          Transforming Houses into Homes
+          We Turn Portfolio Companies Into Digital Powerhouses
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 10 }}
@@ -25,9 +28,10 @@ const Hero = () => {
           transition={{ delay: 0.3, duration: 0.7, ease: "easeInOut" }}
           className="md:w-3/4 text-white md:text-base text-sm font-light"
         >
-          We specialize in turning houses into homes. With our expert design
-          team, we transform living spaces into personalized sanctuaries that
-          reflect your unique style and aspirations.
+          Insight Edge Analytics is your embedded C-suite partner We're fluent
+          in both marketing and finance, bridging the gap that others can't. Our
+          expertise transforms marketing strategies into tangible revenue growth
+          and EBITDA impact.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 5 }}
@@ -43,58 +47,32 @@ const Hero = () => {
           </button>
         </motion.div>
       </div>
-      <div className="w-full border-t flex justify-between items-center py-6 border-gray-600">
-        <div className="flex flex-row gap-12">
-          <div className="flex flex-col">
-            <p className="md:text-sm text-xs font-light text-gray-400">
-              Ryan Keny
-            </p>
-            <p className="text-gray-200 w-max md:text-base text-sm">
-              Good communication
-            </p>
-            <div className="flex mt-2 flex-row gap-1 items-center">
-              <IoIosStar className="text-gray-300 text-xs" />
-              <IoIosStar className="text-gray-300 text-xs" />
-              <IoIosStar className="text-gray-300 text-xs" />
-              <IoIosStar className="text-gray-300 text-xs" />
-              <IoIosStar className="text-gray-300 text-xs" />
-            </div>
-          </div>
-          <div className="flex flex-col">
-            <p className="md:text-sm text-xs font-light text-gray-400">
-              Edwin Ibrhiam
-            </p>
-            <p className="text-gray-200 w-max md:text-base text-sm">
-              A wonderful company
-            </p>
-            <div className="flex mt-2 flex-row gap-1 items-center">
-              <IoIosStar className="text-gray-300 text-xs" />
-              <IoIosStar className="text-gray-300 text-xs" />
-              <IoIosStar className="text-gray-300 text-xs" />
-              <IoIosStar className="text-gray-300 text-xs" />
-              <IoIosStar className="text-gray-300 text-xs" />
-            </div>
-          </div>
-          <div className="md:flex hidden flex-col">
-            <p className="md:text-sm text-xs font-light text-gray-400">
-              Adam Roller
-            </p>
-            <p className="text-gray-200 w-max md:text-base text-sm">
-              Fast delivery and assembly
-            </p>
-            <div className="flex mt-2 flex-row gap-1 items-center">
-              <IoIosStar className="text-gray-300 text-xs" />
-              <IoIosStar className="text-gray-300 text-xs" />
-              <IoIosStar className="text-gray-300 text-xs" />
-              <IoIosStar className="text-gray-300 text-xs" />
-              <IoIosStar className="text-gray-300 text-xs" />
-            </div>
-          </div>
-        </div>
+      <div className="w-full bg-slate-900 opacity-70 relative border-t flex justify-between items-center py-6 border-gray-600">
         <div className="md:flex hidden flex-row gap-6">
-          <Image alt="icon1" src={icons1} className="w-16 h-auto" />
-          <Image alt="icon2" src={icons2} className="w-16 h-auto" />
-          <Image alt="icon3" src={icons3} className="w-16 h-auto" />
+          <Marquee
+            speed={20}
+            delay={0}
+            gradientColor="#0f172a"
+            autoFill={false}
+            pauseOnHover={true}
+            gradient={true}
+          >
+            <Image alt="icon4" src={icons4} className="w-28 mx-4 h-auto" />
+            <Image alt="icon5" src={icons5} className="w-20 mx-4 h-auto" />
+            <Image alt="icon6" src={icons6} className="w-16 mx-4 h-auto" />
+            <Image alt="icon1" src={icons7} className="w-20 mx-4 h-auto" />
+            <Image alt="icon1" src={icons8} className="w-36 mx-4 h-auto" />
+            <Image alt="icon4" src={icons4} className="w-28 mx-4 h-auto" />
+            <Image alt="icon5" src={icons5} className="w-20 mx-4 h-auto" />
+            <Image alt="icon6" src={icons6} className="w-16 mx-4 h-auto" />
+            <Image alt="icon1" src={icons7} className="w-20 mx-4 h-auto" />
+            <Image alt="icon1" src={icons8} className="w-36 mx-4 h-auto" />
+            <Image alt="icon4" src={icons4} className="w-28 mx-4 h-auto" />
+            <Image alt="icon5" src={icons5} className="w-20 mx-4 h-auto" />
+            <Image alt="icon6" src={icons6} className="w-16 mx-4 h-auto" />
+            <Image alt="icon1" src={icons7} className="w-20 mx-4 h-auto" />
+            <Image alt="icon1" src={icons8} className="w-36 mx-4 h-auto" />
+          </Marquee>
         </div>
       </div>
     </div>

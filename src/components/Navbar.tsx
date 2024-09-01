@@ -25,14 +25,14 @@ const Navbar = () => {
       animate={{ opacity: 1 }}
       transition={{ delay: 0, duration: 0.5, ease: "easeInOut" }}
       className={classNames(
-        "fixed md:block hidden top-0 left-0 w-full z-50 duration-300 transition-all",
+        "fixed top-0 left-0 w-full z-50 duration-300 transition-all",
         scrollPosition > 20
           ? "bg-gray-900 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30"
           : "bg-transparent",
         isHomePage ? "text-white" : "text-gray-900"
       )}
     >
-      <div className="flex px-16 py-8 justify-between h-14 items-center">
+      <div className="flex md:px-16 py-8 justify-between h-14 items-center">
         <Link href="/">
           <div className="flex flex-row hover:opacity-50 items-center gap-2">
             <Image alt="icon4" src={Logo} className="w-[14rem] mx-4 h-auto" />
@@ -53,7 +53,7 @@ const Navbar = () => {
           </Link>
         </div> */}
         <button
-          className={`flex flex-row border shadow-xl hover:opacity-70 bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 rounded-full items-center gap-2 px-3 py-1 ${
+          className={`md:flex flex-row hidden border shadow-xl hover:opacity-70 bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 rounded-full items-center gap-2 md:px-3 py-1 ${
             isHomePage ? "border-gray-200" : "border-gray-400"
           }`}
         >

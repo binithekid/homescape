@@ -3,11 +3,11 @@ import AboutImage from "../../public/manworking.png";
 
 const About = () => {
   return (
-    <div className="py-20  md:pt-[7rem] gap-20 bg-stone-100 px-4 md:px-14 flex">
-      <div className="md:w-1/2 flex justify-center">
+    <div className="py-20 md:pt-[7rem] gap-20 bg-stone-100 px-4 md:px-14 flex">
+      <div className="md:w-1/2 md:flex hidden justify-center">
         <img src={AboutImage.src} className="w-full h-auto" />
       </div>
-      <div className="w-1/2 flex flex-col gap-3">
+      <div className="md:w-1/2 w-full flex flex-col gap-3">
         <h2 className="font-medium text-xl">InsightEdge Origin Story</h2>
         <p className="text-sm text-gray-500">
           Founded in 2021 by Alex London, InsightEdge was born out of a unique

@@ -6,7 +6,6 @@ import MobileNavBar from "./MobileNav";
 const Layout = ({ children }: any) => {
   return (
     <div className="min-h-screen">
-      <MobileNavBar />
       <Navbar />
       {children}
       <Footer />

@@ -1,7 +1,7 @@
 import React from "react";
 import MasonryGrid from "@/components/MasonryGrid";
 import { motion } from "framer-motion";
-import Table from "../../public/qualitycheck.jpg";
+import Table from "../../public/qualitycheck.png";
 import Solar from "../../public/aboutImg.webp";
 import Image from "next/image";
 import Link from "next/link";
